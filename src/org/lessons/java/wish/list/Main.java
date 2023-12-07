@@ -1,14 +1,14 @@
-package org.lessons.java.wish;
+package org.lessons.java.wish.list;
 
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class List {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
 
-        // CREO UN INSIEME DI NOME MA SENZA DUPLICATI
+        // CREO LA LISTA DI REGALI VUOTA
         HashSet<String> gifts = new HashSet<>();
 
         boolean stop = false;
@@ -17,7 +17,7 @@ public class List {
             String answer = scanner.nextLine();
             switch (answer){
                 case "y":
-                    // AGGIUNGO NOME
+                    // AGGIUNGO REGALO
                     System.out.println("Name of the gift: ");
                     String name = scanner.nextLine();
                     if(!gifts.contains(name)){
